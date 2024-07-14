@@ -5,18 +5,28 @@
 #### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-一. 啓動 Google 瀏覽器 Chrome , 載入 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension
+一. 確保 Microsoft Window10 系統的 Edge 瀏覽器已全部關閉, 啓動 Microsoft Office Excel 應用.
 
-二. 運行 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension , 在擴展插件的策略介面選擇 test 選項, 加載顯示 test 人機交互介面.
+二. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/ 裏的 Microsoft Excel VBA 類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
 
-三. 啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+三. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 窗體 : CrawlerControlPanel.frm , CrawlerControlPanel.frx
 
-四. 測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension , 操控讀取測試網站 testWeb 頁面顯示的資訊.
+四. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 模組 : CrawlerDispatchModule.bas
+
+五. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 模組 : testCrawlerModule.bas
+
+六. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 對象 : ThisWorkbook.cls
+
+七. 啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+
+八. 運行 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 選擇 test 選項, 從 Microsoft Excel 應用的「加載項」菜單裏, 選擇 : 「 Focused Crawling 」 → 「 operation panel 」 → 「 test 」, 加載顯示 test 人機交互介面.
+
+九. 測試 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 操控讀取測試網站 testWeb 頁面顯示的資訊, 將讀取結果存儲在電子表格 ( Microsoft Excel ) 指定位置.
 </p>
 
 ---
 
-使用 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 説明 :
+使用微軟電子表格 Microsoft Excel VBA 驅動瀏覽器 Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 説明 :
 
 1. 項目架構執行序 :
 
