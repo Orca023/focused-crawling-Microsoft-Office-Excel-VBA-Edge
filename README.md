@@ -90,17 +90,17 @@ Google-Pixel-7 Android-11 Termux-0.118 Linux-Ubuntu-22.04-LTS-rootfs Arm64-aarch
 
 使用 Microsoft Office Excel VBA 操作 Edge、Chrome、Firebox 瀏覽器, 使用 codeproject 網站提供的第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 官方網站 :
 
-[第三方擴展類模組提供網站 codeproject 的官方地址](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
+[第三方擴展類模組 VBA-JSON 官方 GitHub 網站倉庫](https://github.com/VBA-tools/VBA-JSON): 
+https://github.com/VBA-tools/VBA-JSON.git
+
+[第三方擴展類模組提供網站 codeproject 的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
 https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 [第三方擴展類模組 Chromium-Automation-with-CDP-for-VBA 官方 GitHub 網站倉庫](https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA): 
-https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA
+https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA.git
 
 [第三方擴展類模組 Edge-IE-Mode-Automation-with-IES-for-VBA 官方 GitHub 網站倉庫](https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA): 
-https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA/
-
-[第三方擴展類模組 VBA-JSON 官方 GitHub 網站倉庫](https://github.com/VBA-tools/VBA-JSON): 
-https://github.com/VBA-tools/VBA-JSON
+https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA.git
 
 Browser : Google Chrome ( Chromium )
 
