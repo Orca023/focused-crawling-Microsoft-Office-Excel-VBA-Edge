@@ -34,15 +34,13 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 ---
 
-項目空間裏的電子表格 Microsoft Office Excel 檔 : 「 Crawler.xlsm 」 已經載入 :
+項目空間裏的電子表格 Microsoft Excel 檔 : 「 Crawler.xlsm 」 已經載入 :
 
 第三方類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
 
 窗體 ( Form ) : CrawlerControlPanel.frm , CrawlerControlPanel.frx
 
-模組 ( Module ) : CrawlerDispatchModule.bas
-
-模組 ( Module ) : testCrawlerModule.bas
+模組 ( Module ) : CrawlerDispatchModule.bas , testCrawlerModule.bas
 
 對象 ( Object ) : ThisWorkbook.cls
 
