@@ -229,10 +229,10 @@ https://github.com/nodejs/node.git
 
 ---
 
-瀏覽器 ( Browser : Google Chrome ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1OK1J8J5rbMiQPabvYGDUCQ?pwd=h8t9) 下載頁: 
-https://pan.baidu.com/s/1OK1J8J5rbMiQPabvYGDUCQ?pwd=h8t9
+瀏覽器 ( Browser : Microsoft Internet Explorer , Microsoft Edge , Google Chrome , Mozilla Firefox ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
+https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7
 
-提取碼：h8t9
+提取碼：1dm7
 
 ---
 
