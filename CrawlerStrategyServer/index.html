@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>control panel page</title>
+        <meta charset="utf-8"/>
+        <!-- <link rel="shortcut icon" href="#" /> -->
+        <link rel="shortcut icon" href="data:image/ico;base64,aWNv" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- <link rel="stylesheet" href="./lib/bootstrap-5.1.3-dist/css/bootstrap.min.css"> -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <!-- <script type="text/javascript" src="./lib/jquery-3.6.0/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://apps.bdimg.com/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- <script type="text/javascript" src="./lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        <!-- <script id="echartsDisk" type="text/javascript" charset="utf-8" language="javascript" src="/echarts.min.js"></script> -->
+        <!-- <script async id="echartsCDN" type="text/javascript" charset="utf-8" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script> -->
+        <!-- <script id="D3jsDisk" type="text/javascript" charset="utf-8" language="javascript" src="/d3.v7.min.js"></script> -->
+        <!-- <script id="D3jsCDN" type="text/javascript" charset="utf-8" language="javascript" src="https://d3js.org/d3.v7.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="./WUXIPEOPLEsHOSPITAL.css"> -->
+        <style>
+            .container {
+                width: 1024px;
+                height: 100%;
+                margin: 0 auto;
+            }
+            body {
+                background-color: transparent;  /* rgba(0, 0, 0, 0); */
+            }
+            div {
+                position: block;  /* static; */
+                background-color: transparent;  /* rgba(24, 150, 76, 0.7); */
+                margin: auto;
+                overflow-x: auto;
+                overflow-y: auto;
+                border-top-style: none;  /* solid; */
+                border-right-style: none;  /* solid; */
+                border-bottom-style: none;  /* solid; */
+                border-left-style: none;  /* solid; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            button {
+                color: rgba(0, 0, 0, 0.7);
+                width: auto;
+                height: auto;
+                text-align: center;  /* left; right; */
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+            }
+            label {
+                left: auto;
+                right: auto;
+                top: auto;
+                margin-left: 5px;
+                margin-right: 15px;
+                line-height: 20px;
+                background: transparent;
+                color: rgba(0, 0, 0, 0.7);  /* #777; */
+                width: auto;
+                height: auto;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                border-top-style: none;  /* solid; */
+                border-right-style: none;  /* solid; */
+                border-bottom-style: none;  /* solid; */
+                border-left-style: none;  /* solid; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            input {
+                color: rgba(0, 0, 0, 0.7);
+                width: auto;
+                height: 100%;
+                text-align: center;  /* left; right; */
+                background: transparent;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                overflow-wrap: break-word;
+                border-top-style: solid;  /* none; */
+                border-right-style: solid;  /* none; */
+                border-bottom-style: solid;  /* none; */
+                border-left-style: solid;  /* none; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+            }
+            textarea {
+                justify-content: center;
+                vertical-align: middle;
+                align-items: center;
+                text-align: center;  /* left; right; */
+                color: rgba(0, 0, 0, 0.7);
+                width: inherit;
+                height: auto;
+                background: transparent;
+                font-family: 'STFangsong', 'SimSun', 'Microsoft Yahei', 'Times New Roman', Helvetica, Times, Georgia, monospace, Serif;
+                font-style: normal;  /* italic; oblique; */
+                font-size: 0.875em;  /* px/16 = em ; */
+                overflow-wrap: break-word;
+                border-top-style: solid;  /* none; */
+                border-right-style: solid;  /* none; */
+                border-bottom-style: solid;  /* none; */
+                border-left-style: solid;  /* none; */
+                border-top-color: rgba(0, 0, 0, 0.7);
+                border-right-color: rgba(0, 0, 0, 0.7);
+                border-bottom-color: rgba(0, 0, 0, 0.7);
+                border-left-color: rgba(0, 0, 0, 0.7);
+                border-top-Width: 1px;
+                border-right-Width: 1px;
+                border-bottom-Width: 1px;
+                border-left-Width: 1px;
+                resize: both;  /* both(預設值)--在xy方向上均可以拖拽；vertical--在垂直方向上；horizontal--在水平方向上none--不可拖拽；inherit--繼承; */
+            }
+            table {
+                background: transparent;
+                caption-side: bottom;
+                empty-cells: show;
+                table-layout: fixed;
+            }
+            table th td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 防止網頁被使用瀏覽器菜單另存爲的方式下載 -->
+        <noscript><iframe src="*.html"></iframe></noscript>
+
+        <div class="container">
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">focused crawling</span> <br>
+                <span style="display: inline-block">web power automate using Microsoft Office Excel VBA drive Edge browser.</span> <br>
+                <span style="display: inline-block">focused crawling using Microsoft Office Excel VBA drive Edge browser.</span> <br>
+                <span style="display: inline-block">Microsoft Office Excel Professional 2019 x86_64</span> <br>
+                <span style="display: inline-block">Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )</span> <br>
+                <span style="display: inline-block">
+                    使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">
+                    項目使用了 codeproject 網站提供的第三方擴展 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 三個類模組.
+                </span> <br>
+                <span style="display: inline-block">
+                    <a href="https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA" target="_blank">第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA</span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">
+                    一. 確保 Microsoft Window10 系統的 Edge 瀏覽器已全部關閉, 啓動 Microsoft Office Excel 應用.
+                </span> <br>
+                <span style="display: inline-block">
+                    二. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/ 裏的 Microsoft Excel VBA 第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
+                </span> <br>
+                <span style="display: inline-block">
+                    三. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 窗體 : CrawlerControlPanel.frm , CrawlerControlPanel.frx
+                </span> <br>
+                <span style="display: inline-block">
+                    四. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 模組 : CrawlerDispatchModule.bas
+                </span> <br>
+                <span style="display: inline-block">
+                    五. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 模組 : testCrawlerModule.bas
+                </span> <br>
+                <span style="display: inline-block">
+                    六. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 對象 : ThisWorkbook.cls
+                </span> <br>
+                <span style="display: inline-block">
+                    七. 啓動運行測試「testWeb」網站：root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+                </span> <br>
+                <span style="display: inline-block">
+                    八. 運行 Microsoft Excel VBA 宏擴展應用 : 《 focused-crawling-Microsoft-Office-Excel-VBA-Edge 》 選擇 test 選項, 從 Microsoft Excel 應用的「加載項」菜單裏, 選擇 : 「 Focused Crawling 」 → 「 operation panel 」 → 「 test 」, 加載顯示 test 人機交互介面.
+                </span> <br>
+                <span style="display: inline-block">
+                    三. 啓動運行測試「testWeb」網站：root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+                </span> <br>
+                <span style="display: inline-block">
+                    九. 測試 Microsoft Excel VBA 宏擴展應用 : 《 focused-crawling-Microsoft-Office-Excel-VBA-Edge 》 操控讀取測試網站 「 testWeb 」 頁面顯示的資訊, 將讀取結果存儲在電子表格 ( Microsoft Excel ) 指定位置.
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden; style="display: inline-block">
+                <span style="display: inline-block">Operating system :</span> <br>
+                <span style="display: inline-block">
+                    Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
+                </span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+                <span style="display: inline-block">Application :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Microsoft Office Excel Professional 2019 x86_64</span> <br>
+                <span style="display: inline-block">Browser :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Microsoft Internet Explorer ( Trident ) x86_64 version 11</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Microsoft Edge ( Chromium - Blink ) x86_64 version 126.0.2592.102</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Google Chrome ( Chromium - Blink ) x86_64 version 126.0.6478.127</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Mozilla Firefox ( Gecko ) x86_64 version 128.0 2024/07/09</span> <br>
+                <span style="display: inline-block">Interpreter :</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">Node.js - version 20.15.0</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span style="display: inline-block">npm - version 10.7.0</span>
+            </p>
+            <br>
+            <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+                <span style="display: inline-block">
+                    <a href="https://www.microsoft.com/zh-tw/windows" target="_blank">作業系統 ( Operating system ) 之 Microsoft Windows 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.microsoft.com/zh-tw/windows</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.microsoft.com/zh-tw/download/office" target="_blank">電子表格應用 Microsoft Office Excel 官方下載頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.microsoft.com/zh-tw/download/office</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview" target="_blank">電子表格應用 Microsoft Office Excel 2019 官方説明頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.microsoft.com/en-za/download/internet-explorer.aspx" target="_blank">瀏覽器 ( Browser ) 之 Microsoft Internet Explorer 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.microsoft.com/en-za/download/internet-explorer.aspx</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ" target="_blank">瀏覽器 ( Browser ) 之 Microsoft Edge 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH" target="_blank">瀏覽器 ( Browser ) 之 Microsoft Edge 驅動 ( Driver ) 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome ( Chromium ) 開發人員版 ( dev ) 下載中文網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.google.cn/intl/zh-TW/chrome/dev/?standalone=1&system=true&statcb=1&installdataindex=empty&defaultbrowser=0</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://chromedriver.storage.googleapis.com/index.html" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://chromedriver.storage.googleapis.com/index.html</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://npm.taobao.org/mirrors/chromedriver" target="_blank">瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源</a>
+                </span> <br>
+                <span style="display: inline-block">https://npm.taobao.org/mirrors/chromedriver</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://www.mozilla.org/zh-TW/firefox/" target="_blank">瀏覽器 ( Browser ) 之 Mozilla Firefox 下載官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://www.mozilla.org/zh-TW/firefox/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://firefox-source-docs.mozilla.org/testing/geckodriver/" target="_blank">瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方説明頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://firefox-source-docs.mozilla.org/testing/geckodriver/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/mozilla/geckodriver" target="_blank">瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方 GitHub 網站倉庫</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/mozilla/geckodriver.git</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/mozilla/geckodriver/releases" target="_blank">瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 預編譯二進位檔官方 GitHub 網站倉庫</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/mozilla/geckodriver/releases</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://node.js.org/" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://node.js.org/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://nodejs.org/en/" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站</a>
+                </span> <br>
+                <span style="display: inline-block">https://nodejs.org/en/</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://nodejs.org/en/download/package-manager" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方下載頁</a>
+                </span> <br>
+                <span style="display: inline-block">https://nodejs.org/en/download/package-manager</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/nodejs" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/nodejs</span> <br>
+
+                <span style="display: inline-block">
+                    <a href="https://github.com/nodejs/node" target="_blank">程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫</a>
+                </span> <br>
+                <span style="display: inline-block">https://github.com/nodejs/node.git</span>
+            </p>
+        </div>
+    </body>
+</html>
