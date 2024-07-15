@@ -1,7 +1,7 @@
 ## Focused Crawling
 #### web power automate using Microsoft Office Excel VBA drive Edge browser.
 #### focused crawling using Microsoft Office Excel VBA drive Edge browser.
-#### Microsoft Office Professional 2019 x86_64
+#### Microsoft Office Excel Professional 2019 x86_64
 #### Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )
 #### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
@@ -90,11 +90,38 @@ Operating System :
 
 Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
 
-Acer-NEO-2023 Linux-Ubuntu-22.04 x86_64 Inter(R)-Core(TM)-m3-6Y30
+Application :
 
-Google-Pixel-7 Android-11 Termux-0.118 Linux-Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
+Microsoft Office Excel Professional 2019 x86_64
+
+Browser :
+
+Microsoft Internet Explorer ( Trident ) x86_64 version 11
+
+Microsoft Edge ( Chromium - Blink ) x86_64 version 126.0.2592.102
+
+Google Chrome ( Chromium - Blink ) x86_64 version 126.0.6478.127
+
+Mozilla Firefox ( Gecko ) x86_64 version 128.0 2024/07/09
+
+Interpreter :
+
+Node.js - version 20.15.0
+
+npm - version 10.7.0
 
 ---
+
+Application : Microsoft Office Excel Professional 2019
+
+[作業系統 ( Operating system ) 之 Microsoft Windows 官方網站](https://www.microsoft.com/zh-tw/windows): 
+https://www.microsoft.com/zh-tw/windows
+
+[電子表格應用 Microsoft Office Excel 官方下載頁](https://www.microsoft.com/zh-tw/download/office): 
+https://www.microsoft.com/zh-tw/download/office
+
+[電子表格應用 Microsoft Office Excel 2019 官方説明頁](https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview): 
+https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview
 
 使用 Microsoft Office Excel VBA 操作 Edge、Chrome、Firebox 瀏覽器, 使用 codeproject 網站提供的第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 官方網站 :
 
@@ -110,10 +137,20 @@ https://github.com/longvh211/Chromium-Automation-with-CDP-for-VBA.git
 [第三方擴展類模組 Edge-IE-Mode-Automation-with-IES-for-VBA 官方 GitHub 網站倉庫](https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA): 
 https://github.com/longvh211/Edge-IE-Mode-Automation-with-IES-for-VBA.git
 
-Browser : Google Chrome ( Chromium )
+Browser : Microsoft Internet Explorer ( Trident )
 
-[作業系統 ( Operating system ) Linux → Ubuntu Arm64 瀏覽器 ( Browser ) 之 Google Chrome Arm64 下載官方網站](http://ports.ubuntu.com/pool/universe/c/chromium-browser/): 
-http://ports.ubuntu.com/pool/universe/c/chromium-browser/
+[瀏覽器 ( Browser ) 之 Microsoft Internet Explorer 下載官方網站](https://www.microsoft.com/en-za/download/internet-explorer.aspx): 
+https://www.microsoft.com/en-za/download/internet-explorer.aspx
+
+Browser : Microsoft Edge ( Chromium - Blink )
+
+[瀏覽器 ( Browser ) 之 Microsoft Edge 下載官方網站](https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ): 
+https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ
+
+[瀏覽器 ( Browser ) 之 Microsoft Edge 驅動 ( Driver ) 下載官方網站](https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH): 
+https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13LH
+
+Browser : Google Chrome ( Chromium - Blink )
 
 [瀏覽器 ( Browser ) 之 Google Chrome 下載官方網站](https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1): 
 https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1
@@ -126,6 +163,20 @@ https://chromedriver.storage.googleapis.com/index.html
 
 [瀏覽器 ( Browser ) 之 Google Chrome 驅動 ( Driver ) 下載官方網站淘寶網鏡像源](https://npm.taobao.org/mirrors/chromedriver): 
 https://npm.taobao.org/mirrors/chromedriver
+
+Browser : Mozilla Firefox ( Gecko )
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 下載官方網站](https://www.mozilla.org/zh-TW/firefox/): 
+https://www.mozilla.org/zh-TW/firefox/
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方 GitHub 網站倉庫](https://github.com/mozilla/geckodriver): 
+https://github.com/mozilla/geckodriver.git
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 預編譯二進位檔官方 GitHub 網站倉庫](https://github.com/mozilla/geckodriver/releases): 
+https://github.com/mozilla/geckodriver/releases
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 驅動 ( Driver ) 官方説明頁](https://firefox-source-docs.mozilla.org/testing/geckodriver/): 
+https://firefox-source-docs.mozilla.org/testing/geckodriver/
 
 Interpreter : Node.js
 
@@ -143,38 +194,6 @@ https://github.com/nodejs
 
 [程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
 https://github.com/nodejs/node.git
-
-JavaScript library : jQuery , Bootstrap
-
-[網頁元素選擇器工具 jQuery 官方網站](https://jquery.com/): 
-https://jquery.com/
-
-[網頁元素選擇器工具 jQuery 官方下載頁](https://jquery.com/download/): 
-https://jquery.com/download/
-
-[網頁元素選擇器工具 jQuery 官方説明手冊](https://api.jquery.com/): 
-https://api.jquery.com/
-
-[網頁元素選擇器工具 jQuery 的 npm ( Node Package Manager ) 官方倉庫頁](https://www.npmjs.com/package/jquery): 
-https://www.npmjs.com/package/jquery
-
-[網頁元素選擇器工具 jQuery 的 GitHub 官方倉庫頁](https://github.com/jquery/jquery): 
-https://github.com/jquery/jquery.git
-
-[響應式網站布局框架 bootstrap 官方網站](https://v5.bootcss.com/): 
-https://v5.bootcss.com/
-
-[響應式網站布局框架 bootstrap 官方下載頁](https://v5.bootcss.com/docs/getting-started/download/): 
-https://v5.bootcss.com/docs/getting-started/download/
-
-[響應式網站布局框架 bootstrap 官方説明手冊](https://getbootstrap.com/docs/versions/): 
-https://getbootstrap.com/docs/versions/
-
-[響應式網站布局框架 bootstrap 的 npm ( Node Package Manager ) 官方倉庫頁](https://www.npmjs.com/package/bootstrap): 
-https://www.npmjs.com/package/bootstrap
-
-[響應式網站布局框架 bootstrap 的 GitHub 官方倉庫頁](https://github.com/twbs/bootstrap): 
-https://github.com/twbs/bootstrap.git
 
 ---
 
