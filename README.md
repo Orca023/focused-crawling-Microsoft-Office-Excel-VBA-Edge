@@ -2,7 +2,7 @@
 #### web power automate using Microsoft Office Excel VBA drive Edge browser.
 #### focused crawling using Microsoft Office Excel VBA drive Edge browser.
 #### Microsoft Office Professional 2019 x86_64
-#### Microsoft Edge x86_64 version > 103.0.1264.71
+#### Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )
 #### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
