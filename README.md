@@ -16,15 +16,15 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 一. 確保 Microsoft Window10 系統的 Edge 瀏覽器已全部關閉, 啓動 Microsoft Office Excel 應用.
 
-二. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/ 裏的 Microsoft Excel VBA 類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
+二. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/ 裏的 Microsoft Excel VBA 類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
 
-三. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 窗體 : CrawlerControlPanel.frm , CrawlerControlPanel.frx
+三. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 窗體 ( Form ) : CrawlerControlPanel.frm , CrawlerControlPanel.frx
 
-四. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 模組 : CrawlerDispatchModule.bas
+四. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/ 裏的 Microsoft Excel VBA 模組 ( Module ) : CrawlerDispatchModule.bas
 
-五. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 模組 : testCrawlerModule.bas
+五. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 模組 ( Module ) : testCrawlerModule.bas
 
-六. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 對象 : ThisWorkbook.cls
+六. 手動操作 Microsoft Excel 應用, 載入文件夾 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/ 裏的 Microsoft Excel VBA 對象 ( Object ) : ThisWorkbook.cls
 
 七. 啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
 
@@ -34,41 +34,55 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 ---
 
-使用微軟電子表格 Microsoft Excel VBA 驅動瀏覽器 Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 説明 :
+---
+
+使用微軟電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 説明 :
 
 1. 項目架構執行序 :
 
-   1). 單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的後臺脚本檔 ( background ), 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ).
+   1). 啓動 Microsoft Office Excel Professional 2019 應用, 電子表格 Excel 應用會自動運行已載入的模組 ( Module ) 和類模組 ( Class Modul ), 其中載入的調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 裏的自定義過程 ( Subroutine ) : MenuSetup() 會修改電子表格 Excel 的菜單欄 ( Menu Bar ) 向「 加載項 ( add-in ) 」菜單下寫入自定義的 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 標簽.
 
-   2). 後臺脚本檔 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/starter_backgroundHtml.js ) 新建標籤頁面 ( Chrome-Tag ) 載入運行背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ).
+   2).     單擊電子表格 Excel 「 加載項 ( add-in ) 」菜單 ( Menu ) 下 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 標簽, 首先執行的是調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ).
 
-   3). 背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 新建標籤頁面 ( Chrome-Tag ) 依據背景頁面裏自定義選項, 載入運行自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ).
+   3). 調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ), 並讀取操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 裏的自定義配置參數值.
 
-   4). 自定義的操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 新建標籤頁面 ( Chrome-Tag ) 依據操作頁面裏自定義選項, 載入目標網站頁面待讀取頁面顯示的資訊 ( ./focused-crawling-Chrome-Extension/testWeb/ ).
+   4). 同時, 調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 調用窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ), 並根據操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 裏的自定義配置參數值, 爲窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 賦初值, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 是人機交互介面.
 
-   5). 瀏覽器 Google-Chrome 按照配置文檔 ( ./focused-crawling-Chrome-Extension/manifest.json ) 裏記錄的自定義指令預設的注入脚本檔 ( content_scripts ), 自動在所有打開的網頁中, 載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ).
+   5). 手動操控窗體 ( Form ) 介面使用瀏覽器 Microsoft Edge 打開待讀取資訊的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ).
 
-   6). 注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 按照檔裏自定義設計的代碼, 判斷目標網站頁面 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 打開的待讀取資訊的頁面地址 ( URL ), 並依照頁面地址 ( URL ) 選擇將自定義的插入脚本檔 ( injected_script ) 注入目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 本例會載入運行 JavaScript 代碼脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ).
+   6). 首先, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ).
 
-   7). 自定義的插入脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ), 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 返回插入成功信號.
+   7). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 引用第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ).
 
-   8). 手動點擊操控, 從操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 發送信號, 啓動讀取頁面裏顯示的資訊及翻頁等其他網頁動作.
+   8). 最後, 第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ) 會驅動瀏覽器 Microsoft Edge 加載打開目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ).
 
-   9). 從目標網站 ( ./focused-crawling-Chrome-Extension/testWeb/ ) 頁面裏插入的脚本檔 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 自動發送信號, 經由背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 轉發, 向操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 發送讀取到的資訊結果.
+   9). 手動操控窗體 ( Form ) 介面, 啓動循環操控瀏覽器 Microsoft Edge 並讀取載入的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ) 裏顯示的資訊.
 
-   10). 操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 自動將接受到的目標網站頁面顯示的資訊結果, 寫入指定位置存儲.
+   10). 首先, 窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 調用操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ).
 
-2. 項目將自定義的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 獨立一個頁面設計, 目的是, 與背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
+   11). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 引用第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ).
 
-   若不考慮日後的功能擴展, 可取消獨立的操作介面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 設計, 將之全部功能, 整合入背景頁面 ( ./focused-crawling-Chrome-Extension/background/background.html ) 裏, 這樣即可實現單擊 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 啓動運行, 即打開顯示操作頁面 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 的效果, 更簡潔明快.
+   12). 然後, 第三方類模組 ( Class Modul ) : ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsBrowser.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsCore.cls ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CDPimport/clsJsConverter.cls ) 會驅動瀏覽器 Microsoft Edge 翻頁, 並讀取載入的目標網站頁面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/ ) 顯示的資訊.
 
-3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾並重新命名, 保存路徑位於 ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的四個代碼脚本檔 : test_injected.js , test.html , test.js , test.css , 根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 是爲實現新增一組操作介面的效果, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
+   13). 然後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 將讀取到的資訊, 回饋至窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 動態提示運行狀態.
 
-   并且, 需要修改背景頁面的代碼脚本檔 ( ./focused-crawling-Chrome-Extension/background/background.html ) 和  ( ./focused-crawling-Chrome-Extension/background/background.js ) 裏的代碼, 使其可以正確找到載入運行自定義擴展新增的操作頁面的代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test.html ) 類似的.
+   14). 同時, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 讀取窗體 ( Form ) 介面 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏自定義的保存位置參數值.
 
-   并且, 需要修改注入脚本檔 ( ./focused-crawling-Chrome-Extension/content_script.js ) 裏的代碼, 使其可以正確判斷自定義擴展新增的待讀取資訊的目標網站頁面的 URL 地址, 並找到載入運行對應的自定義擴展新增的外源加載的注入代碼脚本檔, 例如像 ( ./focused-crawling-Chrome-Extension/CrawlerStrategyServer/test/test_injected.js ) 類似的.
+   15). 最後, 操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 根據自定義的保存位置參數值, 將讀取到的資訊, 寫入電子表格 Excel 指定的位置存儲.
 
-4. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Chrome-Extension 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定型之後生產階段則不再需要; 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 Google 瀏覽器 Chrome 擴展插件 ( Extension ) : focused-crawling-Chrome-Extension 的功能.
+2. 項目將自定義的操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 目的是, 與調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
+
+   同樣的, 將調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 與窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 分開, 其目的也是爲了, 解耦合, 便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
+
+   若不考慮日後的功能擴展, 可取消獨立的調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 設計, 將之全部功能, 整合入窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏, 這樣可降低項目架構的複雜性, 更易於理解.
+
+3. 若想擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面, 可新增複製 test/ 文件夾並重新命名, 保存路徑位於 ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/ 文件夾裏, 重新命名並自定義修改文件夾 test/ 裏的模組 ( Module ) : testCrawlerModule.bas , 根據需要自定義修改設計編寫代碼脚本即可, 這一操作的目的, 是爲實現新增一組操作介面的效果, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
+
+   并且, 需要修改調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 裏的代碼, 使其可以正確找到調用自定義擴展新增的操作模組 ( Module ) 並正確的讀取適配合規的自定義擴展新增的配置參數初值, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
+
+   并且, 需要修改窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏的代碼, 使其可以正確適配合規的顯示自定義擴展新增的模組 ( Module )的配置參數值, 作爲人機交互介面, 可以正確的操控自定義擴展新增的模組 ( Module ) 引用第三方類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 驅動 Microsoft Edge 瀏覽器, 例如像 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 類似的.
+
+4. 項目空間裏的文件夾 testWeb 祇是一組用於配合測試電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 框架基礎功能的網站頁面, 主要用於開發階段的測試之用, 當 focused-crawling-Microsoft-Office-Excel-VBA-Edge 的策略介面選擇 test 選項加載顯示 test 人機交互介面時, 才需要啓動運行 testWeb 伺服器, 定型之後生產階段則不再需要; 若不需要測試框架基礎功能, 可將文件夾 testWeb 刪除, 不會影響 電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 的功能.
 
    伺服器 testWeb 運行需要 Node.js 環境, 所以運行之前, 需對作業系統 ( Operating System ) 安裝配置 Node.js 環境成功方可.
 
@@ -80,7 +94,7 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
    可在 Linux-Ubuntu 系統的控制臺命令列人機交互介面窗口 ( Ubuntu-bash ) 使用如下指令, 啓動運行 testWeb 伺服器 :
 
-   root@localhost:~# /bin/node ./focused-crawling-Chrome-Extension/testWeb/server.js
+   root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
 
 ![]()
 
@@ -89,6 +103,8 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 Operating System :
 
 Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
+
+---
 
 Application :
 
