@@ -34,6 +34,24 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 ---
 
+項目空間裏的電子表格 Microsoft Office Excel 檔 : 「 Crawler.xlsm 」 已經載入 :
+
+第三方類模組 ( Class Modul ) : clsBrowser.cls , clsCore.cls , clsJsConverter.cls
+
+窗體 ( Form ) : CrawlerControlPanel.frm , CrawlerControlPanel.frx
+
+模組 ( Module ) : CrawlerDispatchModule.bas
+
+模組 ( Module ) : testCrawlerModule.bas
+
+對象 ( Object ) : ThisWorkbook.cls
+
+可直接從 Microsoft Excel 應用的「加載項」菜單裏, 選擇 : 「 Focused Crawling 」 → 「 operation panel 」 → 「 test 」, 加載顯示 test 人機交互介面.
+
+祇需啓動運行測試網站 :  root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js
+
+之後即可測試 Microsoft Excel VBA 宏擴展應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 操控讀取測試網站 testWeb 頁面顯示的資訊, 將讀取結果存儲在電子表格 ( Microsoft Excel ) 指定位置.
+
 ---
 
 使用微軟電子表格 Microsoft Excel VBA 驅動瀏覽器 Microsoft Edge 宏應用 : focused-crawling-Microsoft-Office-Excel-VBA-Edge 説明 :
@@ -72,7 +90,7 @@ https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
 
 2. 項目將自定義的操作模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/testCrawlerModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 目的是, 與調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 分開, 解耦合, 這樣便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
 
-   同樣的, 將調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 與窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 分開, 其目的也是爲了, 解耦合, 便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
+   同樣的, 項目將調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 作爲獨立的一個模組 ( Module ) 設計, 與窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 分開, 其目的也是爲了, 解耦合, 便於日後維護擴展功能, 增加更多元的操控介面, 使之可選擇的, 適用於讀取更多目標網站頁面裏顯示的資訊.
 
    若不考慮日後的功能擴展, 可取消獨立的調度模組 ( Module ) ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerDispatchModule.bas ) 設計, 將之全部功能, 整合入窗體 ( Form ) 對象 ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frx ) , ( ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerControlPanel.frm ) 裏, 這樣可降低項目架構的複雜性, 更易於理解.
 
