@@ -184,6 +184,12 @@ https://developer.microsoft.com/zh-tw/microsoft-edge/tools/webdriver/?form=MA13L
 
 Browser : Google Chrome ( Chromium - Blink )
 
+[瀏覽器 ( Browser ) 之 Google Chrome 官方 GitHub 網站賬戶](https://github.com/GoogleChrome): 
+https://github.com/GoogleChrome
+
+[瀏覽器 ( Browser ) 之 Google Chrome 擴展插件 (Extensions) 開發官方示例 GitHub 網站倉庫](https://github.com/GoogleChrome/chrome-extensions-samples): 
+https://github.com/GoogleChrome/chrome-extensions-samples.git
+
 [瀏覽器 ( Browser ) 之 Google Chrome 下載官方網站](https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1): 
 https://www.google.com/intl/zh-TW/chrome/dev/?standalone=1
 
