@@ -176,6 +176,12 @@ https://www.microsoft.com/en-za/download/internet-explorer.aspx
 
 Browser : Microsoft Edge ( Chromium - Blink )
 
+[瀏覽器 ( Browser ) 之 Microsoft Edge 官方 GitHub 網站賬戶](https://github.com/MicrosoftEdge/): 
+https://github.com/MicrosoftEdge/
+
+[瀏覽器 ( Browser ) 之 Microsoft Edge 官方手冊 GitHub 網站倉庫](https://github.com/MicrosoftEdge/MSEdgeExplainers): 
+https://github.com/MicrosoftEdge/MSEdgeExplainers.git
+
 [瀏覽器 ( Browser ) 之 Microsoft Edge 下載官方網站](https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ): 
 https://www.microsoft.com/zh-tw/edge/download?form=MA13FJ
 
@@ -203,6 +209,12 @@ https://chromedriver.storage.googleapis.com/index.html
 https://npm.taobao.org/mirrors/chromedriver
 
 Browser : Mozilla Firefox ( Gecko )
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 官方 GitHub 網站賬戶](https://github.com/mozilla): 
+https://github.com/mozilla
+
+[瀏覽器 ( Browser ) 之 Mozilla Firefox 官方 GitHub 網站倉庫](https://github.com/mozilla/gecko-dev): 
+https://github.com/mozilla/gecko-dev.git
 
 [瀏覽器 ( Browser ) 之 Mozilla Firefox 下載官方網站](https://www.mozilla.org/zh-TW/firefox/): 
 https://www.mozilla.org/zh-TW/firefox/
