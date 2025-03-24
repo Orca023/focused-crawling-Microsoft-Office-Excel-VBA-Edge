@@ -1,15 +1,20 @@
 ## Focused Crawling
-#### web power automate using Microsoft Office Excel VBA drive Edge browser.
-#### focused crawling using Microsoft Office Excel VBA drive Edge browser.
+#### web power automate using Microsoft Office Excel Visual Basic for Applications ( VBA ) drive Edge browser.
+#### focused crawling using Microsoft Office Excel Visual Basic for Applications ( VBA ) drive Edge browser.
 #### Microsoft Office Excel Professional 2019 x86_64
 #### Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )
 #### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
-項目使用了 codeproject 網站提供的第三方擴展 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 三個類模組.
+項目使用了微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用的第三方擴展 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 三個類模組，由 codeproject 網站發佈取得.
 
 [第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
 https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
+
+項目使用了微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用的第三方擴展 : JsonConverter.bas 模組，由 GitHub 網站倉庫 ( Repository ) : VBA-JSON 發佈取得.
+
+[相互轉換 JSON 字符串與 Excel-VBA-Dict 對象 ( Object ) 使用的第三方擴展類模組 VBA-JSON 官方 GitHub 網站倉庫頁](https://github.com/VBA-tools/VBA-JSON): 
+https://github.com/VBA-tools/VBA-JSON.git
 </p>
 
 ---
