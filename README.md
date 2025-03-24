@@ -155,10 +155,12 @@ https://www.microsoft.com/zh-tw/download/office
 [電子表格應用 Microsoft Office Excel 2019 官方説明頁](https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview): 
 https://learn.microsoft.com/zh-tw/deployoffice/office2019/overview
 
-使用 Microsoft Office Excel VBA 操作 Edge、Chrome、Firebox 瀏覽器, 使用 codeproject 網站提供的第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 官方網站 :
+微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用，轉換 JSON 字符串類型的變量 ( JSON - String Object ) 與微軟電子表格字典類型的變量 ( Windows - Office - Excel - Visual Basic for Applications - Dict Object ) 數據類型，通過借用微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用的第三方擴展類模組「VBA-JSON」實現.
 
 [相互轉換 JSON 字符串與 Excel-VBA-Dict 對象 ( Object ) 使用的第三方擴展類模組 VBA-JSON 官方 GitHub 網站倉庫](https://github.com/VBA-tools/VBA-JSON): 
 https://github.com/VBA-tools/VBA-JSON.git
+
+微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用，操作 Windows - Edge , Google - Chrome , Mozilla - Firebox 瀏覽器, 通過借用 codeproject 網站提供的，微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用的第三方擴展類模組 : clsBrowser.cls , clsCore.cls , clsJsConverter.cls 實現，官方網站 ( codeproject ) 的地址 ( Uniform Resource Locator , URL ) 如下 :
 
 [第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
 https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA
