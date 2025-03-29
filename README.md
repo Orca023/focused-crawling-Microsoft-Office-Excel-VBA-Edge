@@ -5,7 +5,9 @@
 #### Microsoft Edge x86_64 version 126.0.2592.102 ( version > 103.0.1264.71 )
 #### 使用微軟電子表格宏 Excel-VBA 驅動 Edge 瀏覽器, 自動化操作網頁讀取資訊, 網頁定向爬蟲工具.
 ---
+
 <p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;></p>
+
 項目使用了微軟電子表格 ( Windows - Office - Excel - Visual Basic for Applications ) 應用的第三方擴展 :  `clsBrowser.cls` , `clsCore.cls` , `clsJsConverter.cls` 三個類模組，由 codeproject 網站發佈取得.
 
 [第三方擴展類模組提供網站 codeproject 裏的 Automate Chrome or Edge using VBA 庫 ( Tips ) 官方説明頁](https://www.codeproject.com/Tips/5307593/Automate-Chrome-Edge-using-VBA): 
