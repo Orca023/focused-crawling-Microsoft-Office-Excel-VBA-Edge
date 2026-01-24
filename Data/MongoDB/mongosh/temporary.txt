@@ -1,0 +1,13 @@
+此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
+
+微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
+
+需自行下載開箱即用 ( out of the box ) ( portable application ) 已配置壓縮檔「mongosh_2.6.0-Window10-AMD_FX8800P_x86_64.zip」解壓縮，將其保存至檔案夾 ( folder ) : focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/mongosh/ 内，最終完整路徑應爲「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/mongosh/mongosh.exe」
+
+或自行下載對應版本的 MongoDB 資料庫用戶端 ( Client ) 安裝文件 ( mongosh-2.6.0-x64.msi ) 自行安裝配置至該路徑也可.
+
+1、啓動 MongoDB 資料庫的用戶端「mongosh」應用：
+C:\> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB\mongosh\mongosh.exe mongodb://username:password@[::1]:27017/Database1
+
+2、退出 MongoDB 資料庫的用戶端「mongosh」應用：
+Database1> exit
