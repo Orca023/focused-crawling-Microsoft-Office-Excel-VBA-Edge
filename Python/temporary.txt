@@ -1,0 +1,7 @@
+此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
+
+微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
+
+需自行下載壓縮檔「Python-3.11.2-Window11-AMD_FX8800P_x86_64.7z」解壓縮，將其保存至檔案夾 ( folder ) : focused-crawling-Microsoft-Office-Excel-VBA-Edge/Python/ 内，最終完整路徑應爲「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Python/Python311/python.exe」
+
+或自行下載對應版本的程式設計語言 ( Python ) 解釋器 ( Interpreter ) 安裝文件，自行安裝配置至該路徑也可.
