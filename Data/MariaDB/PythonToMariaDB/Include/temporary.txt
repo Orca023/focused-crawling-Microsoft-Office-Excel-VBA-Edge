@@ -1,0 +1,22 @@
+此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
+
+微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
+
+1、啓動微軟視窗作業系統 ( Window11 ) 命令列控制臺 ( C:\Windows\System32\cmd.exe ) 應用，進入「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/」路徑：
+C:\> cd C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\
+
+2、自定義創建 Python 隔離環境「PythonToMariaDB」用於安裝只屬於該隔離環境的第三方擴展包：
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Python\Python311\python.exe -m venv C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/PythonToMariaDB/
+
+3、進入自定義創建的 Python 隔離環境「PythonToMariaDB」的工作空間目錄「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/PythonToMariaDB/」：
+C:\> cd C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB\
+
+4、進入激活自定義的 Python 隔離環境「PythonToMariaDB」用於安裝配置只屬於該隔離環境的第三方擴展包：
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB\Scripts\activate.bat
+
+5、依照該路徑下的「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/PythonToMariaDB/packagelist.txt」文檔，使用程式設計語言 Python 的第三方擴展包管理工具 ( pip ) 自動安裝鏈接操作 MariaDB 資料庫所用到的第三方擴展包應用：
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB\Scripts\pip.exe install -r C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/PythonToMariaDB/packagelist.txt
+
+6、等待安裝完畢未報錯，退出自定義的 Python 隔離環境「PythonToMariaDB」：
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB\PythonToMariaDB\Scripts\deactivate.bat
+返回至微軟視窗作業系統 ( Window11 ) 命令列控制臺 ( C:\Windows\System32\cmd.exe ) 環境即可.
