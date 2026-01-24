@@ -1,0 +1,17 @@
+此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
+
+微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
+
+一、自行創建自定義名爲「Database1」的資料庫：
+1、啓動 MongoDB 資料庫的服務端「mongod」應用：
+C:\> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB\Server\8.2\bin\mongod.exe --config=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/NodejsToMongoDB/mongod.cfg
+2、啓動 MongoDB 資料庫的用戶端「mongosh」應用：
+C:\> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB\mongosh\mongosh.exe mongodb://[::1]:27017/
+3、創建名爲「Database1」的資料庫：
+test> use Database1
+4、創建名爲「Collection1」的數據集合（數據表）：
+Database1> db.createCollection("Collection1")
+5、退出 MongoDB 資料庫的用戶端「mongosh」應用：
+Database1> exit
+
+二、或下載開箱即用 ( out of the box ) ( portable application ) 已配置壓縮檔「data-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip」解壓縮，將其保存至檔案夾 ( folder ) :「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/data/」内自行安裝配置至該路徑即可.
