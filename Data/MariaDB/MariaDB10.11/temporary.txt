@@ -1,7 +1,0 @@
-此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
-
-微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
-
-需自行下載開箱即用 ( out of the box ) ( portable application ) 已配置壓縮檔「MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip」解壓縮，將其保存至檔案夾 ( folder ) : focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/MariaDB10.11/ 内，最終完整路徑應爲「focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/MariaDB10.11/bin/mariadb.exe」
-
-或自行下載對應版本的 MariaDB 資料庫服務端 ( Service ) 安裝文件 ( mariadb-10.11.2-winx64.msi ) 自行安裝配置至該路徑也可.
