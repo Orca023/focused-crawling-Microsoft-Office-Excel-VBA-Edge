@@ -290,16 +290,16 @@ C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:/focused-cra
 
 5. 壓縮檔 : `Server-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip`
 
-壓縮檔「`Server-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MongoDB 伺服器端二進位可執行啓動檔 'mongod.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/Server/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/Server/8.2/bin/mongod.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 伺服器應用 : 
+壓縮檔「`Server-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MongoDB 伺服器端二進位可執行啓動檔 'mongod.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/Server/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/Server/8.2/bin/mongod.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 伺服器應用 : 
 ```
-C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/Server/8.2/bin/mongod.exe --config=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/NodejsToMongoDB/mongod.cfg
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/Server/8.2/bin/mongod.exe --config=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/NodejsToMongoDB/mongod.cfg
 ```
 
 6. 壓縮檔 : `mongosh_2.6.0-Window10-AMD_FX8800P_x86_64.zip`
 
-壓縮檔「`mongosh_2.6.0-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MongoDB 用戶端二進位可執行啓動檔 'mongosh.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/mongosh/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/mongosh/mongosh.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 用戶端應用 : 
+壓縮檔「`mongosh_2.6.0-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MongoDB 用戶端二進位可執行啓動檔 'mongosh.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/mongosh/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/mongosh/mongosh.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 用戶端應用 : 
 ```
-C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MongoDB/mongosh/mongosh.exe mongodb://username:password@[::1]:27017/Database1
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/MongoDB/mongosh/mongosh.exe mongodb://username:password@[::1]:27017/Database1
 ```
 
 7. 壓縮檔 : `data-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip`
@@ -308,8 +308,8 @@ C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-cra
 
 8. 壓縮檔 : `MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip`
 
-壓縮檔「`MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MariaDB 伺服器端二進位可執行啓動檔 'mysqld.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/MariaDB10.11/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/MariaDB10.11/bin/mysqld.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 伺服器應用 : 
+壓縮檔「`MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MariaDB 伺服器端二進位可執行啓動檔 'mysqld.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/bin/mysqld.exe`」，即可使用如下指令啓動運行資料庫 MongoDB 伺服器應用 : 
 ```
-C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/MariaDB10.11/bin/mysqld.exe
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/bin/mysqld.exe
 ```
 即可.
