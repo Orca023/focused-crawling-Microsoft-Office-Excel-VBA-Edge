@@ -30,7 +30,7 @@ https://github.com/VBA-tools/VBA-JSON.git
 
 五. 手動操作 Microsoft Excel 應用, 載入文件夾 `./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/` 裏的 Microsoft Excel VBA 模組 ( Module ) : `testCrawlerModule.bas`
 
-六. 手動操作 Microsoft Excel 應用, 載入文件夾 `./focused-crawling-Microsoft-Office-Excel-VBA-Edge/CrawlerStrategyServer/test/` 裏的 Microsoft Excel VBA 對象 ( Object ) : `ThisWorkbook.cls`
+六. 手動操作 Microsoft Excel 應用, 載入文件夾 `./focused-crawling-Microsoft-Office-Excel-VBA-Edge/` 裏的 Microsoft Excel VBA 對象 ( Object ) : `ThisWorkbook.cls`
 
 七. 啓動運行測試網站 :  `root@localhost:~# /bin/node ./focused-crawling-Microsoft-Office-Excel-VBA-Edge/testWeb/server.js`
 
