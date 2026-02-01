@@ -253,6 +253,34 @@ https://github.com/nodejs
 [程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
 https://github.com/nodejs/node.git
 
+Interpreter : Python
+
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
+https://www.python.org/
+
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方下載頁](https://www.python.org/downloads/): 
+https://www.python.org/downloads/
+
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方 GitHub 網站賬戶](https://github.com/python): 
+https://github.com/python
+
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫頁](https://github.com/python/cpython): 
+https://github.com/python/cpython.git
+
+Database : Microsoft Access
+
+[資料庫 Microsoft Access 應用軟體官方網站](https://www.microsoft.com/en-us/microsoft-365/access): 
+https://www.microsoft.com/en-us/microsoft-365/access
+
+[資料庫 Microsoft Access 應用軟體官方網站中文版](https://www.microsoft.com/zh-tw/microsoft-365/access): 
+https://www.microsoft.com/zh-tw/microsoft-365/access
+
+[資料庫 Microsoft Access 應用軟體官方手冊](https://learn.microsoft.com/en-us/office/vba/api/overview/access): 
+https://learn.microsoft.com/en-us/office/vba/api/overview/access
+
+[資料庫 Microsoft Access 應用軟體官方手冊中文版](https://learn.microsoft.com/zh-tw/office/vba/api/overview/access): 
+https://learn.microsoft.com/zh-tw/office/vba/api/overview/access
+
 ---
 
 瀏覽器 ( Browser : Microsoft Internet Explorer , Microsoft Edge , Google Chrome , Mozilla Firefox ) 和解釋器 ( Interpreter : Node.js ) 預編譯二進制可執行檔 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1IXjbZBRkurrNRs0GoURCaA?pwd=1dm7) 下載頁: 
