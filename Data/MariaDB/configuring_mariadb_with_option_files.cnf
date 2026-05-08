@@ -1,0 +1,74 @@
+# The MariaDB configuration file
+
+# The MariaDB/MySQL tools read configuration files in t>
+# 0. "/etc/mysql/my.cnf" symlinks to this file, reason >
+# 1. "/etc/mysql/mariadb.cnf" (this file) to set global>
+# 2. "/etc/mysql/conf.d/*.cnf" to set global options.
+# 3. "/etc/mysql/mariadb.conf.d/*.cnf" to set MariaDB-o>
+# 4. "~/.my.cnf" to set user-specific options.
+
+# If the same option is defined multiple times, the las>
+
+# One can use all long options that the program support>
+# Run program with --help to get a list of available op>
+# --print-defaults to see which it would actually under>
+
+# If you are new to MariaDB, check out https://mariadb.>
+
+
+# This group is read both by the client and the server
+# use it for options that affect everything
+
+[client-server]
+# Port or socket location where to connect
+port = 3306
+socket = /run/mysqld/mysqld.sock
+
+# Import all .cnf files from configuration directory
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mariadb.conf.d/
+
+
+# [client_custom_group]
+# prompt = '(custom prompt for mariadb client)'
+
+[client]
+plugin_dir = /etc/mysql/lib/plugin
+
+[mariadbd]
+debug_no_sync
+
+[mariadb]
+autoset_open_files_limit
+enable_slow_query_log
+skip_external_locking
+# datadir = /var/lib/mysql
+datadir = /home/StatisticalServer/Data/MariaDB/data
+default_storage_engine = aria
+loose_mutex_deadlock_detector
+max_connections = 20
+language = /usr/local/share/mysql/english
+
+[mysqld]
+temp_pool
+port = 3306
+key_buffer_size = 16M
+innodb_buffer_pool_size = 1012M
+loose_innodb_file_per_table
+character_set_server = utf8mb4
+# datadir = /var/lib/mysql
+datadir = /home/StatisticalServer/Data/MariaDB/data
+# tmpdir = /tmp
+tmpdir = /home/StatisticalServer/Data/MariaDB/tmp
+# basedir = /usr
+basedir = /home/StatisticalServer/Data/MariaDB
+skip_grant_tables
+# bind_address = ::0
+
+[mysql]
+no_auto_rehash
+loose_abort_source_on_error
+
+[mysqldump]
+quick
+max_allowed_packet = 16M
