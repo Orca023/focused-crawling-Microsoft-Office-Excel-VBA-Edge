@@ -1,0 +1,10 @@
+此文檔「temporary.txt」爲臨時説明項，可直接將其刪除，不影響項目運行.
+
+微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Window11 x86_64 Inter(R)-Core(TM)-m3-6Y30 )
+
+一、創建名爲「tmp」的資料夾，用於作爲 MariaDB 資料庫讀寫資料的臨時暫存路徑。
+
+二、啓動 MariaDB 資料庫伺服器時，需讀入自定義的啓動參數，在自定義指定的配置文檔「configuring_mariadb_with_option_files.ini」裏，需要修改條目參數爲如下值：
+datadir=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/data/
+tmpdir=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/tmp/
+basedir=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/
