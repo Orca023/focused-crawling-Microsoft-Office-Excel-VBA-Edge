@@ -1,2 +1,0 @@
-mariadb==1.1.14
-packaging==26.0
