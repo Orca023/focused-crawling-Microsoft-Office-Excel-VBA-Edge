@@ -297,7 +297,7 @@ C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-cra
 
 壓縮檔「`NodejsToMariaDB-MariaDB10.11-Window10-AMD_FX8800P_x86_64.7z`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 使用程式設計語言 ( computer programming language ) : JavaScript 鏈接操作 MariaDB 資料庫的伺服器 'NodejsToMariaDB' 開箱即用 ( out of the box ) ( portable application ) 版，已配置計算機程式設計語言 ( computer programming language ) : JavaScript 解釋器 ( Interpreter ) 運行此資料庫伺服器 'NodejsToMariaDB' 項目所需的第三方擴展模組 ( third-party extensions ( libraries or modules ) ) 的運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/NodejsToMariaDB/` 内，再因應協調配置壓縮檔「`Nodejs-22.20.0-Window10-AMD_FX8800P_x86_64.7z`」之後，即可使用如下指令啓動運行統計運算伺服器「'NodejsToMariaDB`」項目 : 
 ```
-C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Nodejs\Nodejs-22.20.0\node.exe C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/NodejsToMariaDB/Nodejs2MariadbServer.js host=::0 port=3308 number_cluster_Workers=0 MariadbHost=[::1] MariadbPort=3306 dbUser=admin_Database1 dbPass=admin dbName=Database1
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Nodejs/Nodejs-22.20.0/node.exe C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/NodejsToMariaDB/Nodejs2MariadbServer.js host=::0 port=3308 number_cluster_Workers=0 MariadbHost=[::1] MariadbPort=3306 dbUser=admin_Database1 dbPass=admin dbName=Database1
 ```
 
 5. 壓縮檔 : `Server-MongoDB_8.2.3-Window10-AMD_FX8800P_x86_64.zip`
@@ -322,7 +322,7 @@ C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MongoDB> C:/focused-cra
 
 壓縮檔「`MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip`」爲微軟視窗作業系統 ( Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) 資料庫應用 MariaDB 伺服器端二進位可執行啓動檔 'mariadbd.exe' 開箱即用 ( out of the box ) ( portable application ) 版運行環境，可自行下載解壓縮，將其保存至檔案夾 ( folder ) : `focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/` 内，最終完整路徑應爲「`focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/bin/mariadbd.exe`」，即可使用如下指令啓動運行資料庫 MariaDB 伺服器應用 : 
 ```
-C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\MariaDB\MariaDB10.11\bin\mariadbd.exe --defaults-extra-file=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/configuring_mariadb_with_option_files.ini --console
+C:\focused-crawling-Microsoft-Office-Excel-VBA-Edge\Data\MariaDB> C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/MariaDB/MariaDB10.11/bin/mariadbd.exe --defaults-extra-file=C:/focused-crawling-Microsoft-Office-Excel-VBA-Edge/Data/MariaDB/configuring_mariadb_with_option_files.ini --console
 ```
 
 9. 壓縮檔 : `data-MariaDB10.11-Window10-AMD_FX8800P_x86_64.zip`
